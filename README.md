@@ -6,9 +6,10 @@
 - python3 > 3.4
 - [ytarchive-raw](https://github.com/lekoOwO/ytarchive-raw)
 
-## Only multi thread command works
+## Only multi thread works for now.
 To enable tempoarydir location and output location<br />
 Add ```"-td",configuration["tempdir"],"-o",configuration["output"]``` to ```subprocess.call``` on line 64<br />
+Thinking of ways to add other parameters onto subprocess
 First time coding python so dun expect much
 
 ## Usage
