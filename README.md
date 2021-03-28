@@ -9,7 +9,7 @@
 ## Only multi thread works for now.
 To enable tempoarydir location and output location<br />
 Add ```"-td",configuration["tempdir"],"-o",configuration["output"]``` to ```subprocess.call``` on line 64<br />
-Thinking of ways to add other parameters onto subprocess<br />
+Thinking of ways to add other parameters onto subprocess.call<br />
 First time coding python so dun expect much
 
 ## Usage
