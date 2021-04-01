@@ -18,7 +18,7 @@ First time coding python so dun expect much
 - no to update config file
 - Import your json via<br />
   ->Drag and drop<br />
-  ->Tying filename.json<br />
+  ->Typing filename.json<br />
   ->Video url(Work in progress)
   
 ## Initial setup
