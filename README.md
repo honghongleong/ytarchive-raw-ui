@@ -6,7 +6,7 @@
 - python3 > 3.4
 - [ytarchive-raw](https://github.com/lekoOwO/ytarchive-raw)
 
-## Only multi thread works for now.
+## Only multithread works for now.
 To enable tempoarydir location and output location<br />
 Add ```"-td",configuration["tempdir"],"-o",configuration["output"]``` to ```subprocess.call``` on line 64<br />
 Thinking of ways to add other parameters onto subprocess<br />
@@ -16,11 +16,10 @@ First time coding python so dun expect much
 - Get freg json file
 - `python ui.py`
 - no to update config file
-- yes if using .json(make sure json in same dir)<br />
-->filename.json
-- no if using url<br />
-->Video url<br />
-->Audio url
+- Import your json via<br />
+  ->Drag and drop<br />
+  ->Tying filename.json<br />
+  ->Video url(Work in progress)
   
 ## Initial setup
 ```
