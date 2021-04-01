@@ -41,28 +41,36 @@ def check_config():
         #Write the above sections to config.ini file
         with open('config.ini', 'w') as conf:
             config_object.write(conf)
-
+'''
+#Code testing
+def hi_json():
+    # other code...
+    hi_json.bye = 42  # Create function attribute.
+    hi_json.test = input("please input a numbaer:")
+'''
 
 try:
     check_config()
-    file = input("Do you wish to use JSON file instead of URL?: ")
-    if file.lower() in ('y','yes'):
+    #Update Json input methods
+    json = input("Please input Json file or video URL: ")
+    extension=os.path.splitext(str(json))[1]
+    if "https://" in json or "---sn" in json:
+        video = json
+        audio = input("Please input audio URL: ")
+    elif os.path.isfile(json) and ".json" in extension:
+        json = json
+    elif ".json" in json:
         currentDirectory = os.getcwd()
-        json = currentDirectory + "\\" + str(input("Please input the JSON location: "))
-        #json = currentDirectory + "\\" +"test.json"
-        
-    elif file.lower() in ('n','no'):
-        video = str(input("Please input video URL: "))
-        audio = str(input("Please input audio URL: "))
+        json = currentDirectory + "\\" + str(json)
     else:
         print("Invalid Input")
+    
     config_object = ConfigParser()
     config_object.read("config.ini")
     configuration = config_object["Config"]
     #"-o",configuration["output"] 
-    #"-td",configuration["tempdir"]  
-    subprocess.call(["python",".\index.py", "-i", json ,"-t",configuration["threads"]])
-	
+    #"-td",configuration["tempdir"] 
+    subprocess.call(["python", "./index.py", "-i", json ,"-t",configuration["threads"]])
 
 except:
     exit()
