@@ -27,3 +27,8 @@ First time coding python so dun expect much
 2.Enter output location
 3.Enter tempoary directory
 ```
+## To Do's  
+- [] Verify & auto-update to latest version
+- [] Making a web ui to get the video
+- [] Output format to mp4 & mkv instead of only mkv
+- [] Auto download after YTA-auto has confirmed video is private
