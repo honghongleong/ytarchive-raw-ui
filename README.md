@@ -1,16 +1,11 @@
 # ytarchive-raw-ui
 
-## Dependencies
+##A python script to make archiving easier without having to input parameters
 
+## Dependencies
 - ffmpeg
 - python3 > 3.4
 - [ytarchive-raw](https://github.com/lekoOwO/ytarchive-raw)
-
-## Only multithread works for now.
-To enable tempoarydir location and output location<br />
-Add ```"-td",configuration["tempdir"],"-o",configuration["output"]``` to ```subprocess.call``` on line 64<br />
-Thinking of ways to add other parameters onto subprocess<br />
-First time coding python so dun expect much
 
 ## Usage
 - Get freg json file
@@ -27,8 +22,11 @@ First time coding python so dun expect much
 2.Enter output location
 3.Enter tempoary directory
 ```
+
+## Things that are broken
+->Manually input video&audio link does not work<br />
+
 ## To Do's  
 - [ ] Verify & auto-update to latest version
 - [ ] Making a web ui to get the video
-- [ ] Output format to mp4 & mkv instead of only mkv
 - [ ] Auto download after YTA-auto has confirmed video is private
