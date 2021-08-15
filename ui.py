@@ -22,7 +22,7 @@ def check_config():
             #Updating of Config file
             threads = input("Input amount of threads: ")
             output = input("Input output location(in .mkv): ")
-            tempdir = input("Input Tempoary Directory directory: ")
+            tempdir = input("Input Tempoary Directory: ")
             updateinfo["threads"] = threads
             updateinfo["output"] = output
             updateinfo["tempdir"] = tempdir
