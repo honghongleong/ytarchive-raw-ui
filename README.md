@@ -1,6 +1,6 @@
 # ytarchive-raw-ui
 
-##A python script to make archiving easier without having to input parameters
+## A python script to make archiving easier without having to input parameters
 
 ## Dependencies
 - ffmpeg
