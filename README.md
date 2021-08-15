@@ -9,8 +9,8 @@
 
 ## Usage
 - Get freg json file
-- `python ui.py`
-- no to update config file
+- `python ui.py` or `./ui.py`(Powershell)
+- no to update config file(To be revised)
 - Import your json via<br />
   ->Drag and drop<br />
   ->Typing filename.json<br />
@@ -19,12 +19,12 @@
 ## Initial setup
 ```
 1.Enter amount of threads
-2.Enter output location
-3.Enter tempoary directory
+2.Enter Output Location
+3.Enter Tempoary Directory
 ```
 
 ## Things that are broken
-->Manually input video&audio link does not work<br />
+- Manually input video & audio link<br />
 
 ## To Do's  
 - [ ] Verify & auto-update to latest version
